@@ -1,0 +1,28 @@
+{
+  "name": "my-cypress",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "cypress": "cypress open",
+    "cy-cucumber": "cypress run --spec **/*.feature & exit 0"
+  },
+  "author": "maoxin",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^5.1.2",
+    "@types/chai": "^4.2.11",
+    "@types/cucumber": "^6.0.1",
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cypress": "^4.4.1",
+    "cypress-cucumber-preprocessor": "^2.3.1",
+    "ts-loader": "^6.1.0",
+    "ts-node": "^8.9.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.40.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/step_definitions/"
+  }
+}
